@@ -48,7 +48,10 @@
 </section>
 <hr>
 <footer style="text-align: center; width: 100%; margin-top: 20px; color: white;">
-    &copy; 2025 afyuda6
+    &copy; <span id="year"></span> afyuda6
 </footer>
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
