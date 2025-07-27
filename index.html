@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <title>mustakuusi</title>
-    <link rel="icon" href="https://avatars.githubusercontent.com/u/47512456?v=4" type="image/x-icon">
+    <link
+            rel="icon"
+            href="https://avatars.githubusercontent.com/u/47512456?v=4"
+            type="image/x-icon"
+    />
     <style>
         body {
             font-family: Consolas, monospace;
@@ -33,6 +37,22 @@
             color: #eee;
         }
 
+        /* Responsive container sections */
+        .content-section {
+            width: 80%;
+            margin: 20px auto;
+            box-sizing: border-box;
+            padding: 0;
+        }
+
+        @media (max-width: 600px) {
+            .content-section {
+                width: 100%;
+                padding: 0 10px;
+            }
+        }
+
+        /* Carousel styles */
         .carousel {
             display: flex;
             overflow-x: auto;
@@ -55,6 +75,12 @@
             word-wrap: break-word;
             overflow-wrap: break-word;
             box-sizing: border-box;
+        }
+
+        @media (max-width: 480px) {
+            .carousel li {
+                min-width: 85vw;
+            }
         }
 
         .card-content {
@@ -95,26 +121,19 @@
         ul.carousel::-webkit-scrollbar-track {
             background-color: #222;
         }
-
-        @media (max-width: 480px) {
-            .carousel li {
-                min-width: 85vw;
-            }
-        }
     </style>
 </head>
 <body>
 <header style="text-align: center; width: 100%; margin-top: 20px; color: white;">
     <h1>mustakuusi</h1>
-    <a href="./">Home</a> |
-    <a href="contact.html">Contact</a>
+    <a href="./">Home</a> | <a href="contact.html">Contact</a>
 </header>
 
-<section style="width: 100%; padding: 0 10px; box-sizing: border-box;">
+<section class="content-section">
     <h2>Home</h2>
 </section>
 
-<section style="width: 100%; padding: 0 10px; box-sizing: border-box;">
+<section class="content-section">
     <h3>Our games</h3>
 
     <h4>Released:</h4>
@@ -122,9 +141,14 @@
         <li>
             <a href="flappy-custom.html">Flappy Custom</a>
             <div class="card-content">
-                <img src="images/flappy-custom.png" alt="Flappy Custom">
+                <img src="images/flappy-custom.png" alt="Flappy Custom" />
                 <p>Genre: Arcade, Endless, Casual, Tap-to-play</p>
-                <p>Download: <a href="https://play.google.com/store/apps/details?id=com.mustakuusi.flappycustom">Google Play</a></p>
+                <p>
+                    Download:
+                    <a href="https://play.google.com/store/apps/details?id=com.mustakuusi.flappycustom"
+                    >Google Play</a
+                    >
+                </p>
             </div>
         </li>
     </ul>
@@ -134,7 +158,7 @@
         <li>
             <a href="buttons-0.html">Buttons 0: Dog & Cow</a>
             <div class="card-content">
-                <img src="images/buttons-0.png" alt="Buttons 0: Dog & Cow">
+                <img src="images/buttons-0.png" alt="Buttons 0: Dog & Cow" />
                 <p>Genre: Puzzle, Logic, Casual, Brain Training</p>
                 <p>Download: TBA</p>
             </div>
@@ -142,7 +166,7 @@
         <li>
             <a href="buttons-1.html">Buttons 1: Chick & Bear</a>
             <div class="card-content">
-                <img src="images/buttons-1.png" alt="Buttons 1: Chick & Bear">
+                <img src="images/buttons-1.png" alt="Buttons 1: Chick & Bear" />
                 <p>Genre: Puzzle, Logic, Casual, Brain Training</p>
                 <p>Download: TBA</p>
             </div>
@@ -150,7 +174,7 @@
         <li>
             <a href="buttons-2.html">Buttons 2: Gorilla & Pig</a>
             <div class="card-content">
-                <img src="images/buttons-2.png" alt="Buttons 2: Gorilla & Pig">
+                <img src="images/buttons-2.png" alt="Buttons 2: Gorilla & Pig" />
                 <p>Genre: Puzzle, Logic, Casual, Brain Training</p>
                 <p>Download: TBA</p>
             </div>
@@ -158,7 +182,7 @@
         <li>
             <a href="buttons-3.html">Buttons 3: Duck & Penguin</a>
             <div class="card-content">
-                <img src="images/buttons-3.png" alt="Buttons 3: Duck & Penguin">
+                <img src="images/buttons-3.png" alt="Buttons 3: Duck & Penguin" />
                 <p>Genre: Puzzle, Logic, Casual, Brain Training</p>
                 <p>Download: TBA</p>
             </div>
@@ -166,7 +190,7 @@
         <li>
             <a href="buttons-4.html">Buttons 4: Owl & Hippo</a>
             <div class="card-content">
-                <img src="images/buttons-4.png" alt="Buttons 4: Owl & Hippo">
+                <img src="images/buttons-4.png" alt="Buttons 4: Owl & Hippo" />
                 <p>Genre: Puzzle, Logic, Casual, Brain Training</p>
                 <p>Download: TBA</p>
             </div>
@@ -174,7 +198,7 @@
         <li>
             <a href="buttons-5.html">Buttons 5: Crocodile & Rhino</a>
             <div class="card-content">
-                <img src="images/buttons-5.png" alt="Buttons 5: Crocodile & Rhino">
+                <img src="images/buttons-5.png" alt="Buttons 5: Crocodile & Rhino" />
                 <p>Genre: Puzzle, Logic, Casual, Brain Training</p>
                 <p>Download: TBA</p>
             </div>
@@ -182,7 +206,7 @@
         <li>
             <a href="buttons-6.html">Buttons 6: Parrot & Monkey</a>
             <div class="card-content">
-                <img src="images/buttons-6.png" alt="Buttons 6: Parrot & Monkey">
+                <img src="images/buttons-6.png" alt="Buttons 6: Parrot & Monkey" />
                 <p>Genre: Puzzle, Logic, Casual, Brain Training</p>
                 <p>Download: TBA</p>
             </div>
@@ -190,7 +214,7 @@
     </ul>
 </section>
 
-<hr>
+<hr />
 <footer style="text-align: center; width: 100%; margin-top: 20px; color: white;">
     &copy; <span id="year"></span> mustakuusi
 </footer>
