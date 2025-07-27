@@ -68,18 +68,21 @@
             border-radius: 8px;
             padding: 10px;
             list-style: none;
-            min-width: 75vw;
-            max-width: 90vw;
             flex: 0 0 auto;
             scroll-snap-align: start;
             word-wrap: break-word;
             overflow-wrap: break-word;
             box-sizing: border-box;
+            width: 300px;
+            max-width: 300px;
+            min-width: 250px;
         }
 
-        @media (max-width: 480px) {
+        @media (max-width: 600px) {
             .carousel li {
-                min-width: 85vw;
+                width: 85vw;
+                max-width: 90vw;
+                min-width: auto;
             }
         }
 
