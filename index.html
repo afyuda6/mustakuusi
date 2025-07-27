@@ -32,6 +32,50 @@
         a:active {
             color: #eee;
         }
+
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            gap: 16px;
+            padding: 10px 0;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .carousel li {
+            background-color: #111;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 10px;
+            list-style: none;
+            min-width: 240px;
+            flex: 0 0 auto;
+            scroll-snap-align: start;
+        }
+
+        .carousel img {
+            max-width: 100%;
+            border-radius: 4px;
+            display: block;
+            margin: 5px 0;
+        }
+
+        h4 {
+            margin-top: 40px;
+        }
+
+        ul.carousel::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        ul.carousel::-webkit-scrollbar-thumb {
+            background-color: #555;
+            border-radius: 4px;
+        }
+
+        ul.carousel::-webkit-scrollbar-track {
+            background-color: #222;
+        }
     </style>
 </head>
 <body>
@@ -40,98 +84,87 @@
     <a href="./">Home</a> |
     <a href="contact.html">Contact</a>
 </header>
-<section style="width: 80%; margin-left: auto; margin-right: auto;">
+
+<section style="width: 80%; margin: 20px auto;">
     <h2>Home</h2>
 </section>
-<section style="width: 80%; margin-left: auto; margin-right: auto;">
+
+<section style="width: 80%; margin: 20px auto;">
     <h3>Our games</h3>
+
     <h4>Released:</h4>
-    <ul>
+    <ul class="carousel">
         <li>
-            <a href="flappy-custom.html">
-                Flappy Custom
-            </a>
+            <a href="flappy-custom.html">Flappy Custom</a>
             <br>
-            <img src="images/flappy-custom.png" alt="Flappy Custom" style="max-width: 200px; display: block; margin: 5px 0;">
+            <img src="images/flappy-custom.png" alt="Flappy Custom">
             Genre: Arcade, Endless, Casual, Tap-to-play
             <br>
             Download: <a href="https://play.google.com/store/apps/details?id=com.mustakuusi.flappycustom">Google Play</a>
         </li>
     </ul>
+
     <h4>Release soon:</h4>
-    <ul>
+    <ul class="carousel">
         <li>
-            <a href="buttons-0.html">
-                Buttons 0: Dog & Cow
-            </a>
+            <a href="buttons-0.html">Buttons 0: Dog & Cow</a>
             <br>
-            <img src="images/buttons-0.png" alt="Buttons 0: Dog & Cow" style="max-width: 200px; display: block; margin: 5px 0;">
+            <img src="images/buttons-0.png" alt="Buttons 0: Dog & Cow">
             Genre: Puzzle, Logic, Casual, Brain Training
             <br>
             Download: TBA
         </li>
         <li>
-            <a href="buttons-1.html">
-                Buttons 1: Chick & Bear
-            </a>
+            <a href="buttons-1.html">Buttons 1: Chick & Bear</a>
             <br>
-            <img src="images/buttons-1.png" alt="Buttons 1: Chick & Bear" style="max-width: 200px; display: block; margin: 5px 0;">
+            <img src="images/buttons-1.png" alt="Buttons 1: Chick & Bear">
             Genre: Puzzle, Logic, Casual, Brain Training
             <br>
             Download: TBA
         </li>
         <li>
-            <a href="buttons-2.html">
-                Buttons 2: Gorilla & Pig
-            </a>
+            <a href="buttons-2.html">Buttons 2: Gorilla & Pig</a>
             <br>
-            <img src="images/buttons-2.png" alt="Buttons 2: Gorilla & Pig" style="max-width: 200px; display: block; margin: 5px 0;">
+            <img src="images/buttons-2.png" alt="Buttons 2: Gorilla & Pig">
             Genre: Puzzle, Logic, Casual, Brain Training
             <br>
             Download: TBA
         </li>
         <li>
-            <a href="buttons-3.html">
-                Buttons 3: Duck & Penguin
-            </a>
+            <a href="buttons-3.html">Buttons 3: Duck & Penguin</a>
             <br>
-            <img src="images/buttons-3.png" alt="Buttons 3: Duck & Penguin" style="max-width: 200px; display: block; margin: 5px 0;">
+            <img src="images/buttons-3.png" alt="Buttons 3: Duck & Penguin">
             Genre: Puzzle, Logic, Casual, Brain Training
             <br>
             Download: TBA
         </li>
         <li>
-            <a href="buttons-4.html">
-                Buttons 4: Owl & Hippo
-            </a>
+            <a href="buttons-4.html">Buttons 4: Owl & Hippo</a>
             <br>
-            <img src="images/buttons-4.png" alt="Buttons 4: Owl & Hippo" style="max-width: 200px; display: block; margin: 5px 0;">
+            <img src="images/buttons-4.png" alt="Buttons 4: Owl & Hippo">
             Genre: Puzzle, Logic, Casual, Brain Training
             <br>
             Download: TBA
         </li>
         <li>
-            <a href="buttons-5.html">
-                Buttons 5: Crocodile & Rhino
-            </a>
+            <a href="buttons-5.html">Buttons 5: Crocodile & Rhino</a>
             <br>
-            <img src="images/buttons-5.png" alt="Buttons 5: Crocodile & Rhino" style="max-width: 200px; display: block; margin: 5px 0;">
+            <img src="images/buttons-5.png" alt="Buttons 5: Crocodile & Rhino">
             Genre: Puzzle, Logic, Casual, Brain Training
             <br>
             Download: TBA
         </li>
         <li>
-            <a href="buttons-6.html">
-                Buttons 6: Parrot & Monkey
-            </a>
+            <a href="buttons-6.html">Buttons 6: Parrot & Monkey</a>
             <br>
-            <img src="images/buttons-6.png" alt="Buttons 6: Parrot & Monkey" style="max-width: 200px; display: block; margin: 5px 0;">
+            <img src="images/buttons-6.png" alt="Buttons 6: Parrot & Monkey">
             Genre: Puzzle, Logic, Casual, Brain Training
             <br>
             Download: TBA
         </li>
     </ul>
 </section>
+
 <hr>
 <footer style="text-align: center; width: 100%; margin-top: 20px; color: white;">
     &copy; <span id="year"></span> mustakuusi
