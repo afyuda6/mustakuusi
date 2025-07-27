@@ -48,11 +48,13 @@
             border-radius: 8px;
             padding: 10px;
             list-style: none;
-            min-width: 240px;
+            min-width: 75vw;
+            max-width: 90vw;
             flex: 0 0 auto;
             scroll-snap-align: start;
             word-wrap: break-word;
             overflow-wrap: break-word;
+            box-sizing: border-box;
         }
 
         .card-content {
@@ -93,6 +95,12 @@
         ul.carousel::-webkit-scrollbar-track {
             background-color: #222;
         }
+
+        @media (max-width: 480px) {
+            .carousel li {
+                min-width: 85vw;
+            }
+        }
     </style>
 </head>
 <body>
@@ -106,7 +114,7 @@
     <h2>Home</h2>
 </section>
 
-<section style="width: 80%; margin: 20px auto;">
+<section style="width: 100%; padding: 0 10px; box-sizing: border-box;">
     <h3>Our games</h3>
 
     <h4>Released:</h4>
