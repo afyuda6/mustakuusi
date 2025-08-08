@@ -1,4 +1,4 @@
-# pweb
+# mustakuusi
 
 ## URL
-https://afyuda6.netlify.app
+https://mustakuusi.fun
