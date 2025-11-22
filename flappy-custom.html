@@ -20,6 +20,7 @@
 
         a {
             color: #bbb;
+            text-decoration: none;
         }
 
         a:visited {
@@ -42,6 +43,39 @@
             margin: 20px auto;
             object-fit: contain;
         }
+
+        .screenshots {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .screenshots img {
+            width: 100%;
+            border-radius: 4px;
+            object-fit: cover;
+        }
+
+        .download-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .download-links a {
+            display: inline-block;
+            margin: 5px 10px;
+            padding: 10px 16px;
+            border: 1px solid #666;
+            border-radius: 4px;
+            color: white;
+            background-color: #111;
+            transition: background 0.2s;
+        }
+
+        .download-links a:hover {
+            background-color: #222;
+        }
     </style>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1172152988966182"
             crossorigin="anonymous"></script>
@@ -52,6 +86,7 @@
     <a href="./">Home</a> |
     <a href="contact.html">Contact</a>
 </header>
+
 <section style="width: 80%; margin-left: auto; margin-right: auto;">
     <h3>Flappy Custom</h3>
     <img src="images/flappy-custom.png" alt="Flappy Custom" class="game-cover">
@@ -71,12 +106,26 @@
 
     <p>Whether you’re a casual player or a flappy veteran, <strong>Flappy Custom</strong> delivers that classic tap-to-fly thrill you love — now with custom skins and global competition.</p>
 
-    <p>📄 <a href="privacy-policy/flappy-custom.html">Read our full Privacy Policy</a> to learn more about how we handle your data.</p>
+    <div class="screenshots">
+        <img src="images/flappy-custom/1.png" alt="Flappy Custom Screenshot 1">
+        <img src="images/flappy-custom/2.png" alt="Flappy Custom Screenshot 2">
+        <img src="images/flappy-custom/3.png" alt="Flappy Custom Screenshot 3">
+        <img src="images/flappy-custom/4.png" alt="Flappy Custom Screenshot 4">
+    </div>
+
+    <div class="download-links">
+        <a href="https://play.google.com/store/apps/details?id=com.mustakuusi.flappycustom" target="_blank">⬇️ Download on Google Play</a>
+        <a href="https://mustakuusi.itch.io/flappy-custom-arcade-play" target="_blank">🎮 Play on Itch.io</a>
+    </div>
+
+    <p style="margin-top: 20px;">📄 <a href="privacy-policy/flappy-custom.html">Read our full Privacy Policy</a></p>
 </section>
+
 <hr>
 <footer style="text-align: center; width: 100%; margin-top: 20px; color: white;">
     &copy; <span id="year"></span> mustakuusi
 </footer>
+
 <script>
     document.getElementById("year").textContent = new Date().getFullYear();
 </script>

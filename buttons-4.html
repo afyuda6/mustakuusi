@@ -20,6 +20,7 @@
 
         a {
             color: #444;
+            text-decoration: none;
         }
 
         a:visited {
@@ -41,6 +42,39 @@
             display: block;
             margin: 20px auto;
             object-fit: contain;
+        }
+
+        .screenshots {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .screenshots img {
+            width: 100%;
+            border-radius: 4px;
+            object-fit: cover;
+        }
+
+        .download-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .download-links a {
+            display: inline-block;
+            margin: 5px 10px;
+            padding: 10px 16px;
+            border: 1px solid #666;
+            border-radius: 4px;
+            color: white;
+            background-color: #111;
+            transition: background 0.2s;
+        }
+
+        .download-links a:hover {
+            background-color: #222;
         }
     </style>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1172152988966182"
@@ -75,7 +109,19 @@
 
     <p>Whether you love nonograms, color puzzles, or brain training games, <strong>Buttons 4: Owl & Hippo</strong> offers a fresh twist with just two buttons and endless colorful combinations.</p>
 
-    <p>📄 <a href="privacy-policy/buttons-4.html">Read our full Privacy Policy</a> to learn more about how we handle your data.</p>
+    <div class="screenshots">
+        <img src="images/buttons-4/1.png" alt="Buttons 4 Screenshot 1">
+        <img src="images/buttons-4/2.png" alt="Buttons 4 Screenshot 2">
+        <img src="images/buttons-4/3.png" alt="Buttons 4 Screenshot 3">
+        <img src="images/buttons-4/4.png" alt="Buttons 4 Screenshot 4">
+    </div>
+
+    <div class="download-links">
+        <a href="https://play.google.com/store/apps/details?id=com.mustakuusi.buttons4" target="_blank">⬇️ Download on Google Play</a>
+        <a href="https://mustakuusi.itch.io/buttons-4-color-nonogram" target="_blank">🎮 Play on Itch.io</a>
+    </div>
+
+    <p style="margin-top: 20px;">📄 <a href="privacy-policy/buttons-4.html">Read our full Privacy Policy</a></p>
 </section>
 <hr>
 <footer style="text-align: center; width: 100%; margin-top: 20px;">
