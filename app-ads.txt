@@ -1,3 +1,4 @@
+google.com, pub-1172152988966182, DIRECT, f08c47fec0942fa0
 adform.com, 716, RESELLER
 carbonatix.com, 14840966, RESELLER
 freewheel.tv, 1601388, RESELLER
