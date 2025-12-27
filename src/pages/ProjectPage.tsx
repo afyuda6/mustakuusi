@@ -26,7 +26,7 @@ export const ProjectPage = () => {
     const project = (projects as ProjectData[]).find((p) => p.id === id);
 
     if (!project) {
-        return <h2 style={{textAlign: "center"}}>Project not found</h2>;
+        return <div></div>;
     }
 
     return (
