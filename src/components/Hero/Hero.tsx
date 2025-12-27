@@ -13,7 +13,7 @@ interface HeroProps {
 }
 
 export const Hero = ({title, description, buttonLink, downloadLink, playLink, imageUrl}: HeroProps) => {
-    const {ref, isVisible} = useInView(0.05);
+    const {ref, isVisible} = useInView(0.3);
 
     const location = useLocation();
     const isProjectPage = location.pathname !== "/";

@@ -9,7 +9,7 @@ interface AboutProps {
 }
 
 export const About = ({about, itemDescription, privacyPolicyLink}: AboutProps) => {
-    const {ref, isVisible} = useInView(0.05);
+    const {ref, isVisible} = useInView(0.3);
 
     const location = useLocation();
     const isProjectPage = location.pathname !== "/" && !location.pathname.includes("privacy-policy");

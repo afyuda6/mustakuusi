@@ -1,5 +1,6 @@
 import styles from "./ProjectCard.module.css";
 import {getImageUrl} from "../../utils";
+import {useInView} from "../../hooks/useInView.tsx";
 
 interface ProjectProps {
     title: string;
@@ -15,9 +16,10 @@ interface ProjectCardProps {
 }
 
 export const ProjectCard = ({project: {title, imageSrc, description, skills, detail, source}}: ProjectCardProps) => {
-    console.log(getImageUrl(imageSrc));
+    const {ref, isVisible} = useInView(0.05);
+
     return (
-        <div className={styles.container}>
+        <div ref={ref} className={`${styles.container} ${styles.fadeUp} ${isVisible ? styles.visible : ""}`}>
             <img src={getImageUrl(imageSrc)} alt={`Image of ${title}`} className={styles.image}/>
             <h3 className={styles.title}>{title}</h3>
             <p className={styles.description}>{description}</p>

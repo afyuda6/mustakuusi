@@ -1,6 +1,6 @@
 import {useEffect, useRef, useState} from "react";
 
-export function useInView(threshold: number = 0.0) {
+export function useInView(threshold: number) {
     const ref = useRef<HTMLDivElement>(null);
     const [isVisible, setIsVisible] = useState(false);
 
