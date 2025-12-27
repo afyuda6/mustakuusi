@@ -3,6 +3,11 @@
     background-color: var(--color-text);
 }
 
-* {
-    margin-top: 10px;
+.privacy {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.privacy p {
+    margin: 10px;
 }

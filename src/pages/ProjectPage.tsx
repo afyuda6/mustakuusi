@@ -4,7 +4,6 @@ import {Hero} from "../components/Hero/Hero";
 import {About} from "../components/About/About";
 import {Screenshots} from "../components/Screenshots/Screenshots.tsx";
 import {Contact} from "../components/Contact/Contact.tsx";
-import {Navbar} from "../components/Navbar/Navbar.tsx";
 
 interface ProjectData {
     id: string;
@@ -30,7 +29,6 @@ export const ProjectPage = () => {
 
     return (
         <div>
-            <Navbar/>
             <Hero
                 title={project.title}
                 description={project.description}
