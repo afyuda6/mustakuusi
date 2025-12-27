@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: space-between;
     z-index: 1;
-    margin: 54px 10%;
+    margin: 48px 10%;
 }
 
 .content {
@@ -18,9 +18,9 @@
 }
 
 .title {
-    font-size: 48px;
+    font-size: 36px;
     font-weight: 900;
-    margin-bottom: 33px;
+    margin-bottom: 12px;
     font-family: var(--font-roboto), serif;
     background: linear-gradient(90deg, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 0) 120%);
     -webkit-text-fill-color: transparent;
@@ -28,10 +28,10 @@
 }
 
 .description {
-    font-size: 24px;
+    font-size: 18px;
     font-family: var(--font-roboto), serif;
-    margin-bottom: 52px;
-    padding-right: 20px;
+    margin-bottom: 48px;
+    padding-right: 24px;
 }
 
 .contactBtn {
@@ -41,7 +41,7 @@
     border-radius: 100px;
     font-size: 18px;
     font-weight: 600;
-    padding: 17px 26px;
+    padding: 18px 24px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -53,7 +53,7 @@
 }
 
 .heroImg {
-    width: 50%;
+    width: 30%;
     z-index: 1;
 
     animation-name: floating;
@@ -67,7 +67,7 @@
         transform: translate(0, 0px);
     }
     50% {
-        transform: translate(0, 10px);
+        transform: translate(0, 18px);
     }
     100% {
         transform: translate(0, -0px);
@@ -76,28 +76,28 @@
 
 .topBlur {
     position: absolute;
-    width: 50vw;
-    height: 50vw;
-    min-width: 350px;
-    min-height: 350px;
-    top: -128px;
-    left: -10vw;
-    border-radius: 764px;
-    background: rgba(55, 55, 55, 0.7);
+    width: 60vw;
+    height: 60vh;
+    min-width: 360px;
+    min-height: 360px;
+    top: -120px;
+    left: -12vw;
+    border-radius: 720px;
+    background: rgba(55, 55, 55, 0.6);
     filter: blur(100px);
     z-index: 0;
 }
 
 .bottomBlur {
     position: absolute;
-    width: 70vw;
-    height: 50vw;
-    min-width: 350px;
-    min-height: 250px;
-    top: 246px;
-    right: -25vw;
-    border-radius: 764px;
-    background: rgba(55, 55, 55, 0.7);
+    width: 60vw;
+    height: 60vh;
+    min-width: 360px;
+    min-height: 360px;
+    top: 240px;
+    right: -24vw;
+    border-radius: 720px;
+    background: rgba(55, 55, 55, 0.6);
     filter: blur(100px);
     z-index: 0;
 }
@@ -115,7 +115,12 @@
         font-size: 36px;
     }
 
+    .description {
+        text-align: center;
+    }
+
     .heroImg {
-        margin-bottom: 32px;
+        width: 240px;
+        margin-bottom: 36px;
     }
 }
