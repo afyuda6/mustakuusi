@@ -3,6 +3,7 @@ import projects from "../data/projects.json";
 import {Privacy} from "../components/Privacy/Privacy";
 import {Contact} from "../components/Contact/Contact.tsx";
 import {Navbar} from "../components/Navbar/Navbar.tsx";
+import {useEffect} from "react";
 
 export const PrivacyPolicyPage = () => {
     const {id} = useParams();
@@ -11,6 +12,10 @@ export const PrivacyPolicyPage = () => {
     if (!project) {
         return <div></div>;
     }
+
+    useEffect(() => {
+        document.title = `${project.title} | mustakuusi`
+    }, [project.title]);
 
     return (
         <div>

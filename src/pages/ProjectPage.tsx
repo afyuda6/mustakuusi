@@ -5,6 +5,7 @@ import {About} from "../components/About/About";
 import {Screenshots} from "../components/Screenshots/Screenshots.tsx";
 import {Contact} from "../components/Contact/Contact.tsx";
 import {Navbar} from "../components/Navbar/Navbar.tsx";
+import {useEffect} from "react";
 
 interface ProjectData {
     id: string;
@@ -28,6 +29,10 @@ export const ProjectPage = () => {
     if (!project) {
         return <div></div>;
     }
+
+    useEffect(() => {
+        document.title = `${project.title} | mustakuusi`
+    }, [project.title]);
 
     return (
         <div>
