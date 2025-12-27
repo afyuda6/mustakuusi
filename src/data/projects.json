@@ -5,7 +5,7 @@
     "imageSrc": "gridverse-wild.png",
     "description": "A grid-based puzzle that challenges your strategy and careful planning.",
     "skills": [
-      "Unity"
+      "Unity", "Game Design"
     ],
     "detail": "/gridverse-wild",
     "privacyPolicyLink": "/privacy-policy/gridverse-wild",
@@ -26,7 +26,7 @@
     "imageSrc": "gridverse-nine.png",
     "description": "A grid-based puzzle that sharpens your strategy and symbol-solving skills.",
     "skills": [
-      "Unity"
+      "Unity", "Game Design"
     ],
     "detail": "/gridverse-nine",
     "privacyPolicyLink": "/privacy-policy/gridverse-nine",
@@ -47,7 +47,7 @@
     "imageSrc": "buttons-6.png",
     "description": "A series of colorful puzzles that challenge your logic, observation, and pattern-solving skills.",
     "skills": [
-      "Unity"
+      "Unity", "Game Design"
     ],
     "detail": "/buttons-6",
     "privacyPolicyLink": "/privacy-policy/buttons-6",
@@ -68,7 +68,7 @@
     "imageSrc": "buttons-5.png",
     "description": "A series of colorful puzzles that challenge your logic, observation, and pattern-solving skills.",
     "skills": [
-      "Unity"
+      "Unity", "Game Design"
     ],
     "detail": "/buttons-5",
     "privacyPolicyLink": "/privacy-policy/buttons-5",
@@ -89,7 +89,7 @@
     "imageSrc": "buttons-4.png",
     "description": "A series of colorful puzzles that challenge your logic, observation, and pattern-solving skills.",
     "skills": [
-      "Unity"
+      "Unity", "Game Design"
     ],
     "detail": "/buttons-4",
     "privacyPolicyLink": "/privacy-policy/buttons-4",
@@ -110,7 +110,7 @@
     "imageSrc": "buttons-3.png",
     "description": "A series of colorful puzzles that challenge your logic, observation, and pattern-solving skills.",
     "skills": [
-      "Unity"
+      "Unity", "Game Design"
     ],
     "detail": "/buttons-3",
     "privacyPolicyLink": "/privacy-policy/buttons-3",
@@ -131,7 +131,7 @@
     "imageSrc": "buttons-2.png",
     "description": "A series of colorful puzzles that challenge your logic, observation, and pattern-solving skills.",
     "skills": [
-      "Unity"
+      "Unity", "Game Design"
     ],
     "detail": "/buttons-2",
     "privacyPolicyLink": "/privacy-policy/buttons-2",
@@ -152,7 +152,7 @@
     "imageSrc": "buttons-1.png",
     "description": "A series of colorful puzzles that challenge your logic, observation, and pattern-solving skills.",
     "skills": [
-      "Unity"
+      "Unity", "Game Design"
     ],
     "detail": "/buttons-1",
     "privacyPolicyLink": "/privacy-policy/buttons-1",
@@ -173,7 +173,7 @@
     "imageSrc": "buttons-0.png",
     "description": "A series of colorful puzzles that challenge your logic, observation, and pattern-solving skills.",
     "skills": [
-      "Unity"
+      "Unity", "Game Design"
     ],
     "detail": "/buttons-0",
     "privacyPolicyLink": "/privacy-policy/buttons-0",
@@ -194,7 +194,7 @@
     "imageSrc": "flappy-custom.png",
     "description": "A vibrant arcade game that tests your timing and precision.",
     "skills": [
-      "Unity"
+      "Unity", "Game Design"
     ],
     "detail": "/flappy-custom",
     "privacyPolicyLink": "/privacy-policy/flappy-custom",
