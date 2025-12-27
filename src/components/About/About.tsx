@@ -1,5 +1,6 @@
 import styles from "./About.module.css";
 import {useLocation} from "react-router-dom";
+import {useInView} from "../../hooks/useInView.tsx";
 
 interface AboutProps {
     about: string;
@@ -8,11 +9,14 @@ interface AboutProps {
 }
 
 export const About = ({about, itemDescription, privacyPolicyLink}: AboutProps) => {
+    const {ref, isVisible} = useInView(0.05);
+
     const location = useLocation();
     const isProjectPage = location.pathname !== "/" && !location.pathname.includes("privacy-policy");
 
     return (
-        <section className={styles.container} id="about">
+        <section ref={ref} className={`${styles.container} ${styles.fadeUp} ${isVisible ? styles.visible : ""}`}
+                 id="about">
             <h2 className={styles.title}>{about}</h2>
             <div className={styles.content}>
                 <ul className={styles.aboutItems}>

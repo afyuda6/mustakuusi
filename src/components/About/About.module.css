@@ -59,6 +59,17 @@
     text-decoration: underline;
 }
 
+.fadeUp {
+    opacity: 0;
+    transform: translateY(36px);
+    transition: opacity 1.8s ease-out, transform 1.8s ease-out;
+}
+
+.fadeUp.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 @media screen and (max-width: 830px) {
     .container {
         background-color: transparent;

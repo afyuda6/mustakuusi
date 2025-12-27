@@ -1,6 +1,7 @@
 import styles from "./Hero.module.css";
 import {getImageUrl} from "../../utils.ts";
 import {useLocation} from "react-router-dom";
+import {useInView} from "../../hooks/useInView.tsx";
 
 interface HeroProps {
     title: string;
@@ -12,11 +13,13 @@ interface HeroProps {
 }
 
 export const Hero = ({title, description, buttonLink, downloadLink, playLink, imageUrl}: HeroProps) => {
+    const {ref, isVisible} = useInView(0.05);
+
     const location = useLocation();
     const isProjectPage = location.pathname !== "/";
 
     return (
-        <section className={styles.container}>
+        <section ref={ref} className={`${styles.container} ${styles.fadeUp} ${isVisible ? styles.visible : ""}`}>
             <div className={styles.content}>
                 <h1 className={styles.title}>{title}</h1>
                 <p className={styles.description}>{description}</p>

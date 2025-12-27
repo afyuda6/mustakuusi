@@ -2,7 +2,8 @@
 
 .container {
     color: var(--color-text);
-    margin: 32px 10%;
+    padding: 36px 0;
+    margin: 60px 10%;
 }
 
 .title {
@@ -19,6 +20,17 @@
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: center;
-    gap: 15px;
+    gap: 12px;
     width: 100%;
+}
+
+.fadeUp {
+    opacity: 0;
+    transform: translateY(36px);
+    transition: opacity 1.8s ease-out, transform 1.8s ease-out;
+}
+
+.fadeUp.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
