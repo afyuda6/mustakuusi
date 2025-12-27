@@ -1,17 +1,26 @@
 import {useState} from "react";
 import styles from "./Navbar.module.css";
-import {useLocation} from "react-router-dom";
+import {useLocation, useNavigate} from "react-router-dom";
 
 export const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
-
     const location = useLocation();
+    const navigate = useNavigate();
+
     const isHomePage = location.pathname === "/";
     const isProjectPage = location.pathname !== "/" && !location.pathname.includes("privacy-policy");
 
+    const handleTitleClick = () => {
+        if (!isHomePage) {
+            navigate("/");
+        } else {
+            window.scrollTo({top: 0, behavior: "smooth"});
+        }
+    };
+
     return (
         <nav className={styles.navbar}>
-            <a className={styles.title} href="/">mustakuusi</a>
+            <a className={styles.title} onClick={handleTitleClick}>mustakuusi</a>
             <div className={styles.menu}>
                 <div
                     className={`${styles.burger} ${menuOpen ? styles.open : ""}`}
