@@ -40,7 +40,7 @@
 .burger {
     width: 32px;
     height: 24px;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
