@@ -39,6 +39,7 @@
     border-radius: 18px;
     list-style: none;
     padding: 24px;
+    background-color: #333;
     background-image: linear-gradient(90deg, rgba(210, 210, 210, 0.36) 0%, rgba(255, 255, 255, 0) 100%);
     background-size: 0 100%;
     background-repeat: no-repeat;
@@ -75,7 +76,7 @@
     }
 
     .aboutItem {
-        padding-left: 10%;
-        padding-right: 0;
+        padding-left: 6%;
+        padding-right: 6%;
     }
 }

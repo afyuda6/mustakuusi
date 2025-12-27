@@ -80,7 +80,7 @@
     height: 60vh;
     min-width: 120px;
     min-height: 120px;
-    top: -120px;
+    top: -240px;
     left: -12vw;
     border-radius: 720px;
     background: rgba(55, 55, 55, 0.6);
@@ -94,7 +94,7 @@
     height: 60vh;
     min-width: 120px;
     min-height: 120px;
-    top: -120px;
+    top: -240px;
     right: -12vw;
     border-radius: 720px;
     background: rgba(55, 55, 55, 0.6);
