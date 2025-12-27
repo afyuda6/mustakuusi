@@ -15,7 +15,7 @@
 }
 
 .title {
-    font-size: 24px;
+    font-size: 21px;
     font-weight: 700;
 }
 
@@ -47,7 +47,7 @@
     width: 100%;
     margin-top: 18px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .link {
@@ -57,7 +57,7 @@
     font-weight: 600;
     border-radius: 12px;
     background: var(--color-primary);
-    padding: 3px 24px;
+    padding: 3px 15px;
 }
 
 .fadeUp {
