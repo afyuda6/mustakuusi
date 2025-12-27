@@ -12,12 +12,12 @@ function App() {
     return (
         <div className={styles.App}>
             <Router>
-                <Navbar/>
                 <Routes>
                     <Route
                         path="/"
                         element={
                             <>
+                                <Navbar/>
                                 <Hero
                                     title="Hello,"
                                     description="We're Indie Game Developer. Reach out if you'd like to learn more!"
@@ -36,7 +36,7 @@ function App() {
 
                     <Route path="/:id" element={<ProjectPage/>}/>
                     <Route path="/privacy-policy/:id" element={<PrivacyPolicyPage/>}/>
-                    <Route path="*" element={<div></div>} />
+                    <Route path="*" element={<div></div>}/>
                 </Routes>
             </Router>
         </div>
