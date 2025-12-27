@@ -3,7 +3,7 @@ import {getImageUrl} from "../../utils.ts";
 
 export const Contact = () => {
     return (
-        <footer className={styles.container} id="Contact">
+        <footer className={styles.container} id="contact">
             <div className={styles.text}>
                 <h2>Contact</h2>
             </div>
