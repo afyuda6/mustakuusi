@@ -78,8 +78,8 @@
     position: absolute;
     width: 60vw;
     height: 60vh;
-    min-width: 120px;
-    min-height: 120px;
+    min-width: 60px;
+    min-height: 60px;
     top: -240px;
     left: -12vw;
     border-radius: 720px;
@@ -92,8 +92,8 @@
     position: absolute;
     width: 60vw;
     height: 60vh;
-    min-width: 120px;
-    min-height: 120px;
+    min-width: 60px;
+    min-height: 60px;
     top: -240px;
     right: -12vw;
     border-radius: 720px;
