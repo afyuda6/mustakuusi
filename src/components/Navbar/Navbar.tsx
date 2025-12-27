@@ -1,6 +1,5 @@
 import {useState} from "react";
 import styles from "./Navbar.module.css";
-import {getImageUrl} from "../../utils";
 import {useLocation} from "react-router-dom";
 
 export const Navbar = () => {
@@ -14,9 +13,14 @@ export const Navbar = () => {
         <nav className={styles.navbar}>
             <a className={styles.title} href="/">mustakuusi</a>
             <div className={styles.menu}>
-                <img className={styles.menuBtn}
-                     src={menuOpen ? getImageUrl("closeIcon.png") : getImageUrl("menuIcon.png")} alt="menu-button"
-                     onClick={() => setMenuOpen(!menuOpen)}/>
+                <div
+                    className={`${styles.burger} ${menuOpen ? styles.open : ""}`}
+                    onClick={() => setMenuOpen(!menuOpen)}
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <ul className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`} onClick={() => setMenuOpen(false)}>
                     {(isHomePage || isProjectPage) && (
                         <li>
@@ -25,7 +29,7 @@ export const Navbar = () => {
                     )}
                     {isHomePage && (
                         <li>
-                        <a href="#projects">Projects</a>
+                            <a href="#projects">Projects</a>
                         </li>
                     )}
                     {isProjectPage && (
