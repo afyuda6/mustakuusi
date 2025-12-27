@@ -1,6 +1,6 @@
 import styles from "./Privacy.module.css";
 
-export const Privacy = ({id, title}: { id: string, title: string }) => {
+export const Privacy = ({id, title}: { id?: string, title?: string }) => {
     return (
         <div className={styles.privacy}>
             <h1>Privacy Policy {id ? `for ${title}` : ""}</h1>
