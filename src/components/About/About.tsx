@@ -4,9 +4,10 @@ interface AboutProps {
     about: string;
     itemTitle: string;
     itemDescription: string;
+    privacyPolicyLink?: string;
 }
 
-export const About = ({about, itemTitle, itemDescription}: AboutProps) => {
+export const About = ({about, itemTitle, itemDescription, privacyPolicyLink}: AboutProps) => {
     return (
         <section className={styles.container} id="about">
             <h2 className={styles.title}>{about}</h2>
@@ -16,6 +17,11 @@ export const About = ({about, itemTitle, itemDescription}: AboutProps) => {
                         <div className={styles.aboutItemText}>
                             <h3>{itemTitle}</h3>
                             <p>{itemDescription}</p>
+                            <br/>
+                            <p>
+                                📄 Read our full <a href={privacyPolicyLink}>Privacy
+                                    Policy</a>
+                            </p>
                         </div>
                     </li>
                 </ul>

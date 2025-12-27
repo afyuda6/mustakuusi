@@ -16,6 +16,7 @@ interface ProjectData {
     playLink: string;
     source: string;
     longDescription: string;
+    privacyPolicyLink: string;
     screenshots: string[];
 }
 
@@ -40,6 +41,7 @@ export const ProjectPage = () => {
                 about="About the Game"
                 itemTitle="Game Description"
                 itemDescription={project.longDescription}
+                privacyPolicyLink={project.privacyPolicyLink}
             />
             <Screenshots
                 screenshots={project.screenshots}
