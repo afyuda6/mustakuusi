@@ -19,9 +19,9 @@ function App() {
                             <>
                                 <Navbar/>
                                 <Hero
-                                    title="Hello,"
-                                    description="We're Indie Game Developer. Reach out if you'd like to learn more!"
-                                    buttonLink="mailto:fajaryudaapriliano@gmail.com"
+                                    title="Puzzles in Motion"
+                                    description="From grids to skies, each game explores a different way to think, feel, and play."
+                                    buttonLink="#projects"
                                     imageUrl="hero.png"
                                 />
                                 <About

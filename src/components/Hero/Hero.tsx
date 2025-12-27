@@ -24,7 +24,7 @@ export const Hero = ({title, description, buttonLink, downloadLink, playLink, im
                 <h1 className={styles.title}>{title}</h1>
                 <p className={styles.description}>{description}</p>
                 {!isProjectPage && (
-                    <a href={buttonLink} className={styles.contactBtn}>Contact Us</a>
+                    <a href={buttonLink} className={styles.contactBtn}>Projects</a>
                 )}
                 {isProjectPage && (
                     <div className={styles.buttonGroup}>
