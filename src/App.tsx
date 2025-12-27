@@ -6,17 +6,18 @@ import {About} from "./components/About/About";
 import {Projects} from "./components/Projects/Projects";
 import {ProjectPage} from "./pages/ProjectPage";
 import {Contact} from "./components/Contact/Contact.tsx";
+import {PrivacyPolicyPage} from "./pages/PrivacyPolicyPage.tsx";
 
 function App() {
     return (
         <div className={styles.App}>
             <Router>
-                <Navbar/>
                 <Routes>
                     <Route
                         path="/"
                         element={
                             <>
+                                <Navbar/>
                                 <Hero
                                     title="Hello,"
                                     description="We're Indie Game Developer. Reach out if you'd like to learn more!"
@@ -35,6 +36,7 @@ function App() {
                     />
 
                     <Route path="/:id" element={<ProjectPage/>}/>
+                    <Route path="/privacy-policy/:id" element={<PrivacyPolicyPage/>}/>
                 </Routes>
             </Router>
         </div>
