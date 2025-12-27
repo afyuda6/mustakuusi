@@ -1,7 +1,6 @@
 import styles from "./Projects.module.css";
 import projects from "../../data/projects.json";
 import {ProjectCard} from "./ProjectCard.tsx";
-import {useInView} from "../../hooks/useInView.tsx";
 
 interface ProjectProps {
     title: string;
@@ -13,11 +12,8 @@ interface ProjectProps {
 }
 
 export const Projects = () => {
-    const {ref, isVisible} = useInView(0.05);
-
     return (
-        <section ref={ref} className={`${styles.container} ${styles.fadeUp} ${isVisible ? styles.visible : ""}`}
-                 id="projects">
+        <section className={styles.container} id="projects">
             <h2 className={styles.title}>Projects</h2>
             <div className={styles.projects}>
                 {
