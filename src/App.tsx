@@ -36,6 +36,7 @@ function App() {
 
                     <Route path="/:id" element={<ProjectPage/>}/>
                     <Route path="/privacy-policy/:id" element={<PrivacyPolicyPage/>}/>
+                    <Route path="*" element={<div></div>} />
                 </Routes>
             </Router>
         </div>
