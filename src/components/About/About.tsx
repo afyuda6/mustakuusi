@@ -1,4 +1,5 @@
 import styles from "./About.module.css";
+import {useLocation} from "react-router-dom";
 
 interface AboutProps {
     about: string;
@@ -8,6 +9,9 @@ interface AboutProps {
 }
 
 export const About = ({about, itemTitle, itemDescription, privacyPolicyLink}: AboutProps) => {
+    const location = useLocation();
+    const isProjectPage = location.pathname !== "/" && !location.pathname.includes("privacy-policy");
+
     return (
         <section className={styles.container} id="about">
             <h2 className={styles.title}>{about}</h2>
@@ -18,10 +22,10 @@ export const About = ({about, itemTitle, itemDescription, privacyPolicyLink}: Ab
                             <h3>{itemTitle}</h3>
                             <p>{itemDescription}</p>
                             <br/>
-                            <p>
+                            {isProjectPage && (<p>
                                 📄 Read our full <a href={privacyPolicyLink}>Privacy
-                                    Policy</a>
-                            </p>
+                                Policy</a>
+                            </p>)}
                         </div>
                     </li>
                 </ul>
