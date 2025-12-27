@@ -3,12 +3,11 @@ import {useLocation} from "react-router-dom";
 
 interface AboutProps {
     about: string;
-    itemTitle: string;
     itemDescription: string;
     privacyPolicyLink?: string;
 }
 
-export const About = ({about, itemTitle, itemDescription, privacyPolicyLink}: AboutProps) => {
+export const About = ({about, itemDescription, privacyPolicyLink}: AboutProps) => {
     const location = useLocation();
     const isProjectPage = location.pathname !== "/" && !location.pathname.includes("privacy-policy");
 
@@ -19,7 +18,6 @@ export const About = ({about, itemTitle, itemDescription, privacyPolicyLink}: Ab
                 <ul className={styles.aboutItems}>
                     <li className={styles.aboutItem}>
                         <div className={styles.aboutItemText}>
-                            <h3>{itemTitle}</h3>
                             <p>{itemDescription}</p>
                             <br/>
                             {isProjectPage && (<p>

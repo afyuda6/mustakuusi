@@ -39,7 +39,6 @@ export const ProjectPage = () => {
             />
             <About
                 about="About the Game"
-                itemTitle="Game Description"
                 itemDescription={project.longDescription}
                 privacyPolicyLink={project.privacyPolicyLink}
             />
