@@ -94,8 +94,8 @@
     height: 60vh;
     min-width: 360px;
     min-height: 360px;
-    top: 240px;
-    right: -24vw;
+    top: -120px;
+    right: -12vw;
     border-radius: 720px;
     background: rgba(55, 55, 55, 0.6);
     filter: blur(100px);
