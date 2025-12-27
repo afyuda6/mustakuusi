@@ -2,7 +2,8 @@
 
 .container {
     color: var(--color-text);
-    margin: 32px 10%;
+    padding: 36px 0;
+    margin: 60px 10%;
 }
 
 .title {
