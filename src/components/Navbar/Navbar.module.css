@@ -57,7 +57,7 @@
 }
 
 .burger.open span:nth-child(1) {
-    transform: translateY(10.7px) rotate(45deg) scaleX(1);
+    transform: translateY(10.6px) rotate(45deg) scaleX(1);
 }
 
 .burger.open span:nth-child(2) {
@@ -65,7 +65,7 @@
 }
 
 .burger.open span:nth-child(3) {
-    transform: translateY(-10.7px) rotate(-45deg) scaleX(1);
+    transform: translateY(-10.6px) rotate(-45deg) scaleX(1);
 }
 
 .menuOpen {
