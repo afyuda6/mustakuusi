@@ -15,7 +15,9 @@ export const PrivacyPolicyPage = () => {
     return (
         <div>
             <Navbar/>
-            <Privacy id={id}/>
+            <Privacy
+                id={id}
+                title={project.title}/>
             <Contact/>
         </div>
     );

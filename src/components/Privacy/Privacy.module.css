@@ -6,10 +6,13 @@
 }
 
 .privacy {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 10%;
 }
 
 .privacy p {
     margin: 10px;
+}
+.privacy ul {
+    margin: 10px;
+    padding-left: 36px;
 }

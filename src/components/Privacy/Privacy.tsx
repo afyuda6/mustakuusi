@@ -1,18 +1,14 @@
 import styles from "./Privacy.module.css";
 
-export const Privacy = ({id}: { id?: string }) => {
+export const Privacy = ({id, title}: { id?: string, name: string }) => {
     return (
         <div className={styles.privacy}>
-            <h1>Privacy Policy {id ? `for ${id}` : ""}</h1>
-
+            <h1>Privacy Policy {id ? `for ${title}` : ""}</h1>
             <p><strong>Last updated:</strong> December 27, 2025</p>
-
-            <p><em>{id ? `${id}` : ""}</em> is a mobile game developed by <strong>mustakuusi</strong>. Your privacy is
+            <p><em>{id ? `${title}` : ""}</em> is a mobile game developed by <strong>mustakuusi</strong>. Your privacy is
                 important to us. This Privacy Policy explains how information is collected, used, and shared when you
                 use our app, including in-app purchases and advertisements.</p>
-
             <h2>Information Collection and Use</h2>
-
             <p>Our app itself does not directly collect personally identifiable information. However, we use third-party
                 services that may automatically collect certain information to provide advertisements, analytics, game
                 features, and in-app purchases, including:</p>
@@ -22,9 +18,7 @@ export const Privacy = ({id}: { id?: string }) => {
                 <li>Crash logs and diagnostics (via Google Play Games and Unity Ads SDKs)</li>
                 <li>Purchase information for in-app purchases (via Google Play Billing)</li>
             </ul>
-
             <h2>Why This Data is Collected and Shared</h2>
-
             <p>These data are collected and shared for the following purposes:</p>
             <ul>
                 <li><strong>App functionality:</strong> To enable sign-in, achievements, leaderboards, purchased
@@ -43,37 +37,27 @@ export const Privacy = ({id}: { id?: string }) => {
                 <li><strong>Account management:</strong> To manage user accounts through Google Play Games Services.
                 </li>
             </ul>
-
             <h2>Data Encryption</h2>
-
             <p>All data transmitted to third-party services, including purchase and analytics data, is encrypted in
                 transit using industry-standard HTTPS/TLS protocols.</p>
-
             <h2>Advertising and Children</h2>
-
             <p>Our app uses <strong>Unity Ads</strong> to show advertisements. When the app is used by children under
                 the age of 13 (or the applicable age in your country), Unity Ads will only display <strong>non-behavioral
                     ads</strong>, in compliance with Google Play’s Families Policy. Advertising ID is used for ad
                 measurement, frequency capping, and non-personalized ad serving, and it is <strong>not used to
                     personally identify users</strong>.</p>
-
             <h2>In-App Purchases</h2>
-
             <p>Our app offers in-app purchases to unlock certain features, such as removing ads. Payments are processed
                 securely through <strong>Google Play</strong>, and we do <strong>not</strong> collect or store your
                 payment information directly. Google may collect purchase-related information according to their <a
                     href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>.</p>
-
             <p>Purchase data is used to:</p>
             <ul>
                 <li>Enable purchased features in the app</li>
                 <li>Restore purchases on the same device or account</li>
             </ul>
-
             <p>Users can manage purchases and request refunds through their Google Play account.</p>
-
             <h2>Third-Party Services</h2>
-
             <p>Our app uses the following third-party services, which may collect and use data according to their own
                 privacy policies:</p>
             <ul>
@@ -87,9 +71,7 @@ export const Privacy = ({id}: { id?: string }) => {
                     href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>
                 </li>
             </ul>
-
             <h2>Opt-Out and Settings</h2>
-
             <p>Users can manage or opt out of certain data collection:</p>
             <ul>
                 <li><strong>Unity Ads:</strong> Follow instructions on the <a
@@ -102,23 +84,16 @@ export const Privacy = ({id}: { id?: string }) => {
                     Google Play account.
                 </li>
             </ul>
-
             <h2>Children’s Privacy</h2>
-
             <p>We do not knowingly collect personally identifiable information from children under 13 (or the applicable
                 age in your country). If you believe we have collected personal data from a child, please contact us,
                 and we will take steps to remove it.</p>
-
             <h2>Required Data Collection</h2>
-
             <p>The collection of the data listed above is required for the app to function properly. Users cannot
                 disable this collection within the app.</p>
-
             <h2>Contact Us</h2>
-
             <p>If you have any questions or concerns about this Privacy Policy, please contact us at:<br/>
                 <strong>fajaryudaapriliano@gmail.com</strong></p>
-
         </div>
     );
 };
