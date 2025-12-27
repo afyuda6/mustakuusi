@@ -27,7 +27,7 @@ function App() {
                                 <About
                                     about="About"
                                     itemTitle="Game Designer"
-                                    itemDescription="I design casual puzzle and arcade games that are easy to pick up and enjoy. I focus on creating simple mechanics and smooth gameplay that make playing fun. My goal is to craft experiences that bring joy and entertainment to players."
+                                    itemDescription="We design casual puzzle and arcade games that are easy to pick up and enjoy. We focus on creating simple mechanics and smooth gameplay that make playing fun. Our goal is to craft experiences that bring joy and entertainment to players."
                                 />
                                 <Projects/>
                                 <Contact/>
