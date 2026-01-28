@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /
+
+Allow: /angular/
+Allow: /vue/
+Allow: /solid/
+Allow: /react/
+Allow: /preact/
+Allow: /svelte/
