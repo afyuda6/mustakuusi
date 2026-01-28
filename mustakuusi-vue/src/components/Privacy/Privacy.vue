@@ -20,7 +20,7 @@ function setLanguage(lang: string) {
   <div :class="styles.privacy">
     <div :class="styles.privacyHeader">
       <button :class="[styles.translateBtn, !isIndonesian ? styles.active : '']" @click="setLanguage('en')">EN</button>
-      <span> | </span>
+      <span :class="styles.separator">&nbsp;|&nbsp;</span>
       <button :class="[styles.translateBtn, isIndonesian ? styles.active : '']" @click="setLanguage('id')">ID</button>
     </div>
 

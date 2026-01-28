@@ -16,7 +16,7 @@
         <button class={`${styles.translateBtn} ${!isIndonesian ? styles.active : ""}`}
                 on:click={() => setLanguage('en')}>EN
         </button>
-        <span> | </span>
+        <span class={styles.separator}>&nbsp;|&nbsp;</span>
         <button class={`${styles.translateBtn} ${isIndonesian ? styles.active : ""}`}
                 on:click={() => setLanguage('id')}>ID
         </button>
