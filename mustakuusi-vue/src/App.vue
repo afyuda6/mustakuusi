@@ -2,6 +2,7 @@
 import {createRouter, createWebHistory, RouterView} from 'vue-router';
 import {getCurrentInstance} from 'vue';
 import Marquee from './components/Marquee/Marquee.vue';
+import Footer from './components/Footer/Footer.vue';
 import HomePage from "./pages/HomePage.vue";
 import GamePage from "./pages/GamePage.vue";
 import CharacterPage from "./pages/CharacterPage.vue";
@@ -37,5 +38,6 @@ if (app) app.use(router)
   <div :class="styles.App">
     <Marquee/>
     <RouterView/>
+    <Footer/>
   </div>
 </template>
