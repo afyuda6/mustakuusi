@@ -1,0 +1,9 @@
+@if (game) {
+  <app-navbar></app-navbar>
+
+  <app-privacy [id]="game.id" [title]="game.title"></app-privacy>
+
+  <app-contact></app-contact>
+} @else {
+  <div></div>
+}

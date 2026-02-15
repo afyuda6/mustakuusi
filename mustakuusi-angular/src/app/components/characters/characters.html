@@ -1,0 +1,19 @@
+<section
+  appInView
+  [threshold]="0.18"
+  (isVisibleChange)="isVisible = $event"
+  [class.visible]="isVisible"
+  class="container fadeUp"
+  id="characters"
+>
+  <h2 class="title">{{ characterSection }}</h2>
+
+  <div class="characters">
+    @for (character of characters; track character.id) {
+      <app-character-card
+        [character]="character"
+        [ngClass]="{ 'centered': character.id === 'lato' }"
+      ></app-character-card>
+    }
+  </div>
+</section>

@@ -1,0 +1,18 @@
+@if (character) {
+  <app-navbar></app-navbar>
+
+  <app-hero
+    [title]="character.name"
+    [imageUrl]="character.imageSrc"
+    [description]="character.description"
+  ></app-hero>
+
+  <app-games
+    [gameSection]="character.name + ' di Gim'"
+    [games]="filteredGames"
+  ></app-games>
+
+  <app-contact></app-contact>
+} @else {
+  <div></div>
+}
