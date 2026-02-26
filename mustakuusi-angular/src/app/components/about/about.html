@@ -1,0 +1,26 @@
+<section
+  appInView
+  [threshold]="0.18"
+  (isVisibleChange)="isVisible = $event"
+  [class.visible]="isVisible"
+  class="container fadeUp"
+  id="about"
+>
+  <h2 class="title">{{ about }}</h2>
+
+  <div class="content">
+    <ul class="aboutItems">
+      <li class="aboutItem">
+        <div class="aboutItemText">
+          <p>{{ itemDescription }}</p>
+          <br/>
+          @if (isGamePage && privacyPolicyLink) {
+            <p>
+              📄 <a [routerLink]="privacyPolicyLink">Privacy Policy</a>
+            </p>
+          }
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>

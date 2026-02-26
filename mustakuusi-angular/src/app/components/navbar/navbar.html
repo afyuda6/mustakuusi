@@ -1,0 +1,37 @@
+<nav class="navbar">
+  <a class="title" [routerLink]="['/']">mustakuusi</a>
+
+  <div class="menu">
+    <div class="burger" [class.open]="menuOpen" (click)="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <ul class="menuItems" [class.menuOpen]="menuOpen" (click)="menuOpen=false">
+      @if (isHomePage || isGamePage) {
+        <li>
+          <a [routerLink]="[]" fragment="about" (click)="removeHash()">Tentang</a>
+        </li>
+      }
+      @if (isHomePage || isCharacterPage) {
+        <li>
+          <a [routerLink]="[]" fragment="games" (click)="removeHash()">Gim</a>
+        </li>
+      }
+      @if (isHomePage || isGamePage) {
+        <li>
+          <a [routerLink]="[]" fragment="characters" (click)="removeHash()">Karakter</a>
+        </li>
+      }
+      @if (isGamePage) {
+        <li>
+          <a [routerLink]="[]" fragment="screenshots" (click)="removeHash()">Cuplikan</a>
+        </li>
+      }
+      <li>
+        <a [routerLink]="[]" fragment="contact" (click)="removeHash()">Kontak</a>
+      </li>
+    </ul>
+  </div>
+</nav>

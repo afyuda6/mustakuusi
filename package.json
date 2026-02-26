@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "build-angular": "cd mustakuusi-angular && npm install && npm run build -- --base-href /r/ --deploy-url /r/ && cd .. && mv dist/r/browser/* dist/r && rm -rf dist/r/browser",
+    "build-preact": "cd mustakuusi-preact && npm install && npm run build && cd ..",
+    "build-react": "cd mustakuusi-react && npm install && npm run build && cd ..",
+    "build-solid": "cd mustakuusi-solid && npm install && npm run build && cd ..",
+    "build-svelte": "cd mustakuusi-svelte && npm install && npm run build && cd .. && mv dist/y/client/* dist/y && rm -rf dist/y/client",
+    "build-vue": "cd mustakuusi-vue && npm install && npm run build && cd ..",
+    "build-all": "npm install && npm run build-angular && npm run build-preact && npm run build-react && npm run build-solid && npm run build-svelte && npm run build-vue"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  }
+}

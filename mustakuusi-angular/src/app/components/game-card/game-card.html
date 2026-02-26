@@ -1,0 +1,48 @@
+<div
+  appInView
+  [threshold]="0.18"
+  (isVisibleChange)="isVisible = $event"
+  [class.visible]="isVisible"
+  class="container fadeUp"
+>
+  <div class="card">
+    <img
+      [src]="getImageUrl(game.imageSrc)"
+      [alt]="'Image of ' + game.title"
+      class="image"
+    />
+
+    <h3 class="title">
+      <a [routerLink]="game.detail">{{ game.title }}</a>
+    </h3>
+    <time class="date" [dateTime]="game.date">Dirilis: {{ formattedDate }} WIB</time>
+
+    <ul class="categories">
+      @for (category of game.categories; track category) {
+        <li class="category">
+          {{ category }}
+        </li>
+      }
+    </ul>
+
+    <div class="links">
+      @if (countdown()) {
+        <h2 class="badge">{{ countdown() }}</h2>
+      }
+      @if (!countdown() && game.downloadLink) {
+        <a [href]="game.downloadLink" target="_blank" rel="noopener"><img
+          [src]="getImageUrl('googlebadge.png')"
+          alt="Unduh di Google Play"
+          class="badge"
+        /></a>
+      }
+      @if (!countdown() && game.playLink) {
+        <a [href]="game.playLink" target="_blank" rel="noopener"><img
+          [src]="getImageUrl('itchbadge.png')"
+          alt="Main di itch.io"
+          class="badge"
+        /></a>
+      }
+    </div>
+  </div>
+</div>

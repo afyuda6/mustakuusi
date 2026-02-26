@@ -1,0 +1,41 @@
+<section
+  appInView
+  [threshold]="0.18"
+  (isVisibleChange)="isVisible = $event"
+  [class.visible]="isVisible"
+  class="container fadeUp"
+>
+  <div class="content">
+    <h1 class="title">{{ title }}</h1>
+    <p class="description" [innerHTML]="description"></p>
+
+    @if (isHomePage) {
+      <a href="#games" class="gameBtn" (click)="removeHash()">Cari Gim</a>
+    }
+
+    @if (isGamePage) {
+      <div class="buttonGroup">
+        @if (countdown()) {
+          <h2 class="badge">{{ countdown() }}</h2>
+        }
+        @if (!countdown() && downloadLink) {
+          <a [href]="downloadLink" target="_blank" rel="noopener"><img
+            [src]="getImageUrl('googlebadge.png')"
+            alt="Unduh di Google Play"
+            class="badge"
+          /></a>
+        }
+        @if (!countdown() && playLink) {
+          <a [href]="playLink" target="_blank" rel="noopener"><img
+            [src]="getImageUrl('itchbadge.png')"
+            alt="Main di itch.io"
+            class="badge"
+          /></a>
+        }
+      </div>
+    }
+  </div>
+
+  <img [src]="getHeroImage()" alt="hero"
+       [class.heroImg]="!isCharacterPage" [class.characterHeroImg]="isCharacterPage">
+</section>

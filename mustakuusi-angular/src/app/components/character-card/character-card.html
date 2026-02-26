@@ -1,0 +1,24 @@
+<div
+  appInView
+  [threshold]="0.18"
+  (isVisibleChange)="isVisible = $event"
+  [class.visible]="isVisible"
+  class="container fadeUp"
+>
+  <div class="card">
+    <div class="imagecon">
+      <img
+        [src]="getImageUrl(character.imageSrc)"
+        [alt]="'Image of ' + character.name"
+        class="image"
+      />
+    </div>
+
+    <a
+      [routerLink]="['/character', character.id]"
+      class="title"
+    >
+      {{ character.name }}
+    </a>
+  </div>
+</div>

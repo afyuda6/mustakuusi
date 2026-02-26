@@ -1,0 +1,15 @@
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+
+export default defineConfig({
+  plugins: [vue()],
+  css: {
+    modules: {
+      localsConvention: "camelCase",
+    }
+  },
+  base: '/g',
+  build: {
+    outDir: '../dist/g'
+  }
+})

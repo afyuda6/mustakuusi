@@ -1,0 +1,18 @@
+<section
+  appInView
+  [threshold]="0.18"
+  (isVisibleChange)="isVisible = $event"
+  [class.visible]="isVisible"
+  class="container fadeUp"
+  id="games"
+>
+  <h2 class="title">{{ gameSection }}</h2>
+
+  <div class="games">
+    @for (game of games; track game.id) {
+      <app-game-card
+        [game]="game"
+      ></app-game-card>
+    }
+  </div>
+</section>
