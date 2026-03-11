@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/api/index" },
+    { "source": "/r/(.*)", "destination": "/r/index.html" },
+    { "source": "/g/(.*)", "destination": "/g/index.html" },
+    { "source": "/b/(.*)", "destination": "/b/index.html" },
+    { "source": "/c/(.*)", "destination": "/c/index.html" },
+    { "source": "/m/(.*)", "destination": "/m/index.html" },
+    { "source": "/y/(.*)", "destination": "/y/index.html" },
+    { "source": "/(.*)", "destination": "/api/index" }
+  ]
+}

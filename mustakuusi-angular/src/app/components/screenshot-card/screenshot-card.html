@@ -1,0 +1,13 @@
+<div
+  appInView
+  [threshold]="0.18"
+  (isVisibleChange)="isVisible = $event"
+  [class.visible]="isVisible"
+  class="container fadeUp"
+>
+  <img
+    [src]="getImageUrl(imageSrc)"
+    [alt]="title"
+    class="image"
+  />
+</div>

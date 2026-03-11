@@ -1,0 +1,32 @@
+@if (game) {
+  <app-navbar></app-navbar>
+
+  <app-hero
+    [title]="game.title"
+    [description]="game.description"
+    [downloadLink]="game.downloadLink"
+    [playLink]="game.playLink"
+    [imageUrl]="game.imageSrc"
+    [date]="game.date"
+  ></app-hero>
+
+  <app-about
+    about="Tentang Gim"
+    [itemDescription]="game.longDescription"
+    [privacyPolicyLink]="game.privacyPolicyLink"
+  ></app-about>
+
+  <app-characters
+    characterSection="Karakter di Gim"
+    [characters]="filteredCharacters"
+  ></app-characters>
+
+  <app-screenshots
+    [screenshots]="game.screenshots"
+    [title]="game.title"
+  ></app-screenshots>
+
+  <app-contact></app-contact>
+} @else {
+  <div></div>
+}

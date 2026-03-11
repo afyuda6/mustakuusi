@@ -1,0 +1,15 @@
+.container {
+  width: 100%;
+  overflow: hidden;
+  background-color: #FF9F9F;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  text-align: center;
+  display: inline-block;
+  white-space: nowrap;
+}

@@ -1,0 +1,16 @@
+<section
+  appInView
+  [threshold]="0.18"
+  (isVisibleChange)="isVisible = $event"
+  [class.visible]="isVisible"
+  class="container fadeUp"
+  id="screenshots"
+>
+  <h2 class="title">Cuplikan</h2>
+
+  <div class="screenshots">
+    @for (src of screenshots; track src) {
+      <app-screenshot-card [imageSrc]="src" [title]="title"></app-screenshot-card>
+    }
+  </div>
+</section>
