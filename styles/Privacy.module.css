@@ -1,0 +1,42 @@
+@import "../vars.css";
+
+.privacy {
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    padding: 20px 10%;
+}
+
+.privacy *,
+.translateBtn,
+.separator {
+    font-family: "Roboto", sans-serif;
+}
+
+.privacy p {
+    margin: 10px;
+}
+
+.privacy ul {
+    margin: 10px;
+    padding-left: 36px;
+}
+
+.privacy a {
+    color: var(--color-text);
+    text-decoration: underline;
+    transition: opacity 0.3s ease;
+}
+
+.privacy a:hover {
+    opacity: 0.6;
+}
+
+.separator {
+    font-size: 30px;
+}
+
+.active {
+    opacity: 1;
+    font-weight: bolder;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
